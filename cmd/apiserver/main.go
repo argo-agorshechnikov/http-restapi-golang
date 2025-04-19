@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	// Start of apiserver
+	// Start to apiserver
 	s := apiserver.New()
 	if err := s.Start(); err != nil {
 		log.Fatal(err)
