@@ -7,9 +7,11 @@ import (
 )
 
 func main() {
+	// Initial config
+	config := apiserver.NewConfig()
 
 	// Start to apiserver
-	s := apiserver.New()
+	s := apiserver.New(config)
 	if err := s.Start(); err != nil {
 		log.Fatal(err)
 	}
